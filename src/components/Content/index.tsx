@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Container } from './styled';
 
-const Content: React.FC = () => (
+const Content: React.FC = ({children}) => (
   <Container>
-    <h1>Content</h1>
+    {children}
   </Container>
 )
 

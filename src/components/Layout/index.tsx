@@ -6,11 +6,13 @@ import Header from '../Header'
 import Aside from '../Aside'
 import Content from '../Content'
 
-const Layout: React.FC = () => (
+const Layout: React.FC = ({children}) => (
   <Container>
     <Header/>
     <Aside/>
-    <Content/>
+    <Content>
+      {children}
+    </Content>
   </Container>
 )
 
